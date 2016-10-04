@@ -1,6 +1,10 @@
 # XTrain
 
+**WARNING: This is ancient code that I'm not maintaining anymore. There still seems to be some demand for it, though, and it still builds, so I'm posting it on GitHub in hopes that somebody may find it useful.**
+
 XTrain is a Java 1.5 implementation of the Bestvina-Handel algorithm for homeomorphisms of surfaces with one puncture. Moreover, XTrain also computes triangulations of mapping tori of surface homeomorphisms, suitable for Jeff Weeks's program SnapPea. Surface homeomorphisms can be entered as a composition of Dehn twists with respect to a great variety of curves, or in terms of the induced automorphism of the fundamental group. XTrain was covered in depth here and here.
+
+The main GUI class is `pbj.gui.XTrain`.
 
 ## Command-line Version and XTrain Development
 
