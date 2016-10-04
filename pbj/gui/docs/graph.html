@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>XTrain</title>
+</head>
+<body>
+<h2>XTrain</h2>
+
+<p>To get started, simply choose one of the Dehn twist menu items, hit
+Enter, and look at the information that appears in the main window.</p>
+
+<p>Self-maps of graphs are given in the following format:</p>
+
+<pre>
+-----------------------------------------------------
+8 // number of edges
+3 // number of vertices
+// format: edge: (initial, terminal vertex) --> image
+a: (v1, v2) --> d
+b: (v0, v2) --> bfedagC
+c: (v1, v0) --> Ac
+d: (v2, v1) --> e
+e: (v1, v2) --> f
+f: (v2, v1) --> hb
+g: (v2, v0) --> ag
+h: (v1, v0) --> g
+HcGADEFBCadefhbg // fixed word
+
+label: nice_map
+
+marking:
+2 // number of loops
+// format: label: loop
+d0: DE
+d2: HcGADEFBGAcGADEFBGAcGADEFB
+-----------------------------------------------------
+</pre>
+
+<p>The fixed word, label, and marking are optional. The
+fixed word is required to be preserved (up to free
+homotopy). The loops in the marking are loops in the
+graph (capital letters denote edges with reversed
+orientation).</p>
+
+<p>If an edge is mapped to a point, its image string
+must be the underscore character ('_').</p>
+
+<p>Comment lines beginning with '//' are allowed at any
+point.</p>
+
+<p>The menu items are intended to be self-explanatory.
+The terminology is consistent with Bestvina-Handel:
+'Train Tracks for Surface Homeomorphisms.'</p>
+
+<p>You can enter maps of graphs manually, read them from
+files, or compute them as compositions of Dehn twists
+(see help text for Dehn twists).</p>
+</body>
+</html>

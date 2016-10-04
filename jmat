@@ -1,0 +1,2 @@
+#!/bin/sh
+java pbj.math.graph.train.Matrices $@

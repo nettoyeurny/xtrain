@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>XTrain-SnapPea Help</title>
+</head>
+<body>
+<h2>SnapPea and XTrain</h2>
+
+<p>The SnapPea connectivity of XTrain serves several purposes:</p>
+<ul>
+<li>It computes certain geometric properties of the mapping torus of a
+pseudo-Anosov map, such as volume and fundamental group.</li>
+<li>It checks whether the mapping torus of the current map is isometric
+to a given manifold in the census.  Elements of the census are selected
+by name, e.g., <code>m134</code>.</li>
+<li>It checks whether the mapping torus of the current map is isometric
+to a manifold read from a file.  In order to compare the mapping tori of
+two pseudo-Anosov maps, for instance, you can simply load the first map
+into XTrain, export it to SnapPea (i.e., write a triangulation to a
+file), then load the next map into XTrain and check for isometry to the
+file you created before.</li>
+</ul>
+
+<h2>Installing SnapPea</h2>
+
+<p>In order to call SnapPea from within XTrain, you need to have SnapPeaPython
+installed.  Point your browser to <a
+href="http://www.math.uic.edu/~t3m/">http://www.math.uic.edu/~t3m/</a>
+and download the tarball <code>SnapPeaPython.tgz</code>.</p>
+<ul>
+<li>Open a shell and go to the directory that contains the tarball you
+just downloaded.</li>
+<li>Unpack the tarball by typing <code>tar xzf
+SnapPeaPython.tgz</code>.</li>
+<li>Type <code>cd SnapPeaPython</code>.</li>
+<li>Compile SnapPea by typing <code>python setup.py build</code>.</li>
+<li>Install the Python bindings for SnapPea by typing <code>python
+setup.py install</code>.  On some systems, you may need to have root
+privileges to install the package (say <code>sudo python setup.py
+install</code> in this case).</li>
+</ul>
+</body>
+</html>
