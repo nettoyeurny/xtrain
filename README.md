@@ -42,6 +42,3 @@ Typically, the programs jtwist, jtrain, jdraw, jmt, and jsnap are connected by p
 `jtwist pbj/examples/batman.tw | jtrain | jdraw -n >batman.ps` reads a homeomorphism from the file pbj/examples/batman.tw and writes the PostScript code to the file batman.ps.
 
 `jtwist pbj/examples/batman.tw | jtrain | jmt | jsnap >foo` takes a composition of Dehn twists, computes a train track, triangulates its mapping torus, and converts the result to SnapPea's triangulation file format; the output is redirected into the file foo, which can be read by SnapPea. It's not really necessary to compute a train track (you can plug jtwist directly into jmt), but it's advantageous because the resulting triangulations tend to be much smaller this way.
-
-## XTrain and SnapPea
-XTrain communicates with SnapPea via Python, using shell scripts that may be of independent interest.
